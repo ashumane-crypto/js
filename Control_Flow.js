@@ -49,5 +49,22 @@ do {
     l++;
 } while (l<=5);
 
+// Jump Statements
+
+// 1) Break Statement
+for (let m=1;m<7;m++){
+    if (m==4) {
+        break;
+    }
+    console.log(m);
+}
+
+// 2) Continue Statement
+for (let n=1;n<7;n++){
+    if (n==4) {
+        continue;
+    }
+    console.log(n);
+}
 
 
