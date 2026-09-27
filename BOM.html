@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BOM Practice</title>
+  </head>
+  <body>
+    <h1>BOM Practice</h1>
+
+    <button onclick="showBrowserInfo()">Browser Information</button>
+
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+      function showBrowserInfo() {
+        console.log("Window Width:", window.innerWidth);
+
+        console.log("Window Height:", window.innerHeight);
+
+        console.log("Current URL:", location.href);
+
+        console.log("Language:", navigator.language);
+
+        console.log("Online:", navigator.onLine);
+
+        console.log("Screen Width:", screen.width);
+
+        console.log("Screen Height:", screen.height);
+      }
+
+      function goBack() {
+        history.back();
+      }
+    </script>
+  </body>
+</html>
