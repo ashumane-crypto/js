@@ -22,3 +22,18 @@ console.log(person);
 import {add,subtract} from './math.js'; //importing functions from another file
 console.log(add(2,3));
 console.log(subtract(5,2));
+
+//Map(),filter(),reduce() methods
+const products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Phone", price: 20000 },
+    { name: "Mouse", price: 1000 }
+];
+const productNames = products.map(product => product.name); //map() method
+console.log(productNames);
+
+const expensiveProducts = products.filter(product => product.price > 10000); //filter() method
+console.log(expensiveProducts);
+
+const totalPrice = products.reduce((total, product) => total + product.price, 0); //reduce() method
+console.log(totalPrice);
