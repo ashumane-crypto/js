@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM practice</title>
+</head>
+
+<body>
+    <h1>Hello Ashwini</h1>
+    <h1 id="title">Helloo World</h1>
+    <p id="para">old message</p>
+
+    <p class="message">One</p>
+    <p class="message">Two</p>
+    <p class="message">Three</p>
+
+    <h2>DOM practice</h2>
+    <h2>Lorem Ispum</h2>
+
+
+    <script>
+        console.log(document)
+        let heading = document.getElementById("title"); //getElementById
+        console.log(heading);
+        let paragraph = document.getElementById("para"); //getElementById
+        // paragraph.innerText="new message"; //change the text of paragraph
+        paragraph.textContent="new message"; //change the text of paragraph
+        console.log(paragraph);
+
+        //getElementsByClassName
+        let mess=document.getElementsByClassName("message");
+        console.log(mess);
+        console.log(mess[0]);
+        console.log(mess[1]);
+        console.log(mess[2]);
+        mess[0].textContent="new message 1";
+
+        //getElementsByTagName
+        let headings = document.getElementsByTagName("h2");
+        console.log(headings);
+        console.log(headings[0]);
+
+        querySelector
+        let title=document.querySelector("#title");
+        console.log(title);
+
+        let para=document/querySelector(".message");
+        console.log(para);
+
+        //querySelectorAll
+        let messages=document.querySelectorAll(".message");
+        console.log(messages);
+    </script>
+    
+</body>
+</html>
